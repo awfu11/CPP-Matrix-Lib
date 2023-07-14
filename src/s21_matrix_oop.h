@@ -5,14 +5,6 @@
 #include <cmath>
 
 class S21Matrix {
- private:
-  int rows_, cols_;
-  double** matrix_;
-  void allocate();
-  void clear();
-  void Minor(const S21Matrix& arr, int row, int column) noexcept;
-  double Det() const;
-
  public:
   S21Matrix();
   explicit S21Matrix(int size);
@@ -50,6 +42,14 @@ class S21Matrix {
   S21Matrix& operator*=(const S21Matrix& other);
   friend S21Matrix operator*(const double num, const S21Matrix& other);
   friend S21Matrix operator*(const S21Matrix& other, const double num);
+
+ private:
+  int rows_, cols_;
+  double** matrix_;
+  void allocate();
+  void clear();
+  void Minor(const S21Matrix& arr, int row, int column) noexcept;
+  double Det() const;
 };
 
 #endif  // _S21_MATRIX_OOP_H_
