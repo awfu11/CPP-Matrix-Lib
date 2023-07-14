@@ -10,7 +10,7 @@ Implementation of the s21_matrix_oop.h library.
     2.1. [Part 1](#part-1-implementation-of-the-s21_matrix_ooph-library-functions)
 
 
-## Chapter II
+## Chapter I
 
 ## Information
 
@@ -55,7 +55,7 @@ And you also need to overload the following operators, partly corresponding to t
 | `(int i, int j)`  | Indexation by matrix elements (row, column) | index is outside the matrix |
 
 
-## Chapter III
+## Chapter II
 
 ## Part 1. Implementation of the s21_matrix_oop.h library functions
 
