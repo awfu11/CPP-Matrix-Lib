@@ -28,7 +28,7 @@ leaks: test
 	@rm -rf *.gcda *.gcno
 
 clang:
-	@cp ../materials/linters/.clang-format ../src/.clang-format
+	@brew install clang-format
 	clang-format -n -style=google $(CXX_FILES) $(HEADER_FILES) $(TEST_FILES)
 	clang-format -i -style=google $(CXX_FILES) $(HEADER_FILES) $(TEST_FILES)
 	@rm -rf .clang-format
