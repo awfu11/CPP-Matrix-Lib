@@ -7,7 +7,7 @@ Implementation of the s21_matrix_oop.h library.
 1. [Chapter I](#chapter-ii) \
     1.1. [Information](#information)
 2. [Chapter II](#chapter-iii) \
-    2.1. (#implementation-of-the-s21_matrix_ooph-library-functions)
+    2.1. (implementation-of-the-s21_matrix_ooph-library-functions)
 
 
 ## Chapter I
