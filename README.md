@@ -2,16 +2,6 @@
 
 Implementation of the s21_matrix_oop.h library.
 
-## Contents
-
-1. [Chapter I](#chapter-ii) \
-    1.1. [Information](#information)
-2. [Chapter II](#chapter-iii) \
-    2.1. (implementation-of-the-s21_matrix_ooph-library-functions)
-
-
-## Chapter I
-
 ## Information
 
 ## Matrix operations
@@ -54,7 +44,6 @@ And you also need to overload the following operators, partly corresponding to t
 | `*=`  | Multiplication assignment (`MulMatrix`/`MulNumber`) | the number of columns of the first matrix does not equal the number of rows of the second matrix |
 | `(int i, int j)`  | Indexation by matrix elements (row, column) | index is outside the matrix |
 
-## Chapter II
 
 ## Implementation of the s21_matrix_oop.h library functions
 
