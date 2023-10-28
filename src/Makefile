@@ -15,7 +15,6 @@ all: test
 clean:
 	rm -rf $(LIB)
 	rm -rf *.gcda *.gcno unit_tests
-	rm -rf .clang-format
 
 $(LIB):
 	@$(CXX) $(CXXFLAGS) -c $(CXX_FILES)
@@ -27,13 +26,3 @@ test: $(LIB)
 	@$(CXX) $(CXXFLAGS) $(GTEST) -coverage $(CXX_TEST_FILES) $(LIB) -o unit_tests
 	@./unit_tests
 	@rm -rf *.gcda *.gcno
-
-leaks: test
-	@leaks -atExit -- ./unit_tests
-	@rm -rf *.gcda *.gcno
-
-clang:
-	@brew install clang-format
-	clang-format -n -style=google $(CXX_FILES) $(HEADER_FILES) $(TEST_FILES)
-	clang-format -i -style=google $(CXX_FILES) $(HEADER_FILES) $(TEST_FILES)
-	@rm -rf .clang-format
