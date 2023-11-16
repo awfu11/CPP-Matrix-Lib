@@ -63,7 +63,7 @@ class S21Matrix {
 
  private:
   int rows_{}, cols_{};
-  double** matrix_P{};
+  double** matrix_;
 
   void allocate();
   void clear();
