@@ -2,8 +2,6 @@
 
 Implementation of the s21_matrix_oop.h library.
 
-## Information
-
 ## Matrix operations
 
 There is a brief description of the matrix operations below that need to be implemented in the developing library.
